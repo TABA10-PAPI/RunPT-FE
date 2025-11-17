@@ -1,0 +1,76 @@
+/* 로그인 전체 감싸는 내부 박스 */
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  padding: 40px 24px;
+}
+
+/* 인삿말 */
+.welcome-title {
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+/* 이미 RunPT 색깔은 App.css에서 runpt-text 클래스로 관리 */
+.runpt-text {
+  color: var(--app-color); /* 이미 정의했다고 가정 */
+}
+
+/* 중앙 큰 이미지 */
+.main-logo {
+  width: 260px;
+  height: auto;
+  
+  margin: 20px 0 40px 0;
+}
+
+/* 버튼 공통 */
+.login-buttons {
+  width: 100%;
+}
+
+.login-btn {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* 아이콘 크기 통일 */
+.icon {
+  width: auto;
+  height: 60px;
+}
+
+/* 카카오 버튼 */
+.kakao-btn {
+  background-color: #FEE500;
+  color: #000000;
+}
+
+/* 네이버 버튼 */
+.naver-btn {
+  background-color: #03C75A;
+  color: white;
+}
