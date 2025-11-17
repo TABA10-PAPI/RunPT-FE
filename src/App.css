@@ -1,6 +1,12 @@
 :root {
-  --app-color: #DAFD2E;
+  --green: 218, 253, 46;        /* #DAFD2E */
+  --yellow: 255, 255, 0;       /* #FFFF00 */
+  --red: 255, 77, 79;          /* #FF4D4F */
+  --black: 9, 9, 9;            /* #090909 */
+  --white: 248, 248, 248;      /* #F8F8F8 */
+  --gray: 37, 37, 37;          /* #252525 */
 }
+
 
 .container {
     display: flex;
@@ -22,10 +28,10 @@
   font-size: 16px;
   font-weight: bold;
   color: #090909;
-  background :var(--app-color);
+  background :rgba(var(--green));
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 8px 16px rgba(106, 90, 249, 0.25);
+  box-shadow: 0 8px 16px rgba(var(--green), 0.25);
   transition: background-color 0.2s;
 }
