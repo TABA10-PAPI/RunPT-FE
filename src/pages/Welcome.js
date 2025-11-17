@@ -12,7 +12,7 @@ function Welcome() {
   return (
     <div className="container" style={{ textAlign: 'center' }}>
       <img
-        src="/logo.png"
+        src="assets/logo.png"
         alt="logo"
         style={{
           width: '180px',
