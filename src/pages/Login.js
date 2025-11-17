@@ -6,11 +6,11 @@ function Login(){
     // const REST_API_KEY = "API_KEY";
     // const REDIRECT_URI = "URI";
 
-    // const link = 'https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code';
+    const link = 'https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code';
 
-    // const loginHandler = () => {
-    //     window.location.href = link;
-    // }
+    const loginHandler = () => {
+        window.location.href = link;
+    }
     return (
 
 
