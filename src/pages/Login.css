@@ -1,7 +1,8 @@
 .login-page {
   padding-top: 80px;     /* 상단 여백 늘리기 */
   padding-left: 24px;
-  padding-right: 24px;    
+  padding-right: 24px;
+  padding-bottom: 80px;
 }
 
 
@@ -26,10 +27,10 @@
 
 /* 중앙 큰 이미지 */
 .main-logo {
-  width: 300px;
+  width: 350px;
   height: auto;        
   display: block;
-  margin: 32px auto 32px auto;  /* 좌우 중앙 정렬 */
+  margin: auto auto auto auto;  /* 좌우 중앙 정렬 */
   object-fit: cover;    
 }
 

@@ -24,7 +24,7 @@ function Login(){
             </p>
 
             <img 
-            src="/assets/runpt-main.png" 
+            src="/assets/logo.png" 
             alt="RunPT Main Logo" 
             className="main-logo"
             />
