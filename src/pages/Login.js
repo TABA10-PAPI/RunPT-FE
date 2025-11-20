@@ -19,7 +19,7 @@ function Login() {
   };
 
   return (
-    <div className="container login-page">
+    <div className="container">
       {/* container 전체 검정 배경 */}
       <h1 className="login-title font-bold">환영합니다.</h1>
 

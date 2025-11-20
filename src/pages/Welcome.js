@@ -12,12 +12,14 @@ function Welcome() {
 
   return (
     <div className="container" style={{ textAlign: "center" }}>
+      <div className="welcome-content">
       <img src="assets/logo.png" alt="logo" className="welcome-logo" />
       <h1 className="welcome-title font-bold">RunPT</h1>
 
       <p className="welcome-subtitle font-semibold">
         AI가 만드는 나만의 러닝 코치
       </p>
+      </div>
       <button className="big-button" onClick={goNext}>
         시작하기
       </button>
