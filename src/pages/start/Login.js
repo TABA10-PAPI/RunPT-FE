@@ -1,21 +1,20 @@
 import React from "react";
 import "../../App.css";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import { KAKAO_AUTH_URL, NAVER_AUTH_URL } from "./Oauth/Oauth";
 
 function Login() {
-  const KAKAO_API_KEY = process.env.REACT_APP_KAKAO_API_KEY;
-  const KAKAO_REDIRECT_URI = process.env.REACT_APP_KAKAO_REDIRECT_URI;
-
-  const KAKAO_AUTH_URL =
-    "https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_API_KEY}&redirect_uri=${KAKAO_REDIRECT_URI}&response_type=code";
-  const NAVER_AUTH_URL =
-    "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${NAVER_CLIENT_ID}&state=${STATE}&redirect_uri=${REDIRECT_URI}";
-
   const KakaoLogin = () => {
     window.location.href = KAKAO_AUTH_URL;
   };
   const NaverLogin = () => {
     window.location.href = NAVER_AUTH_URL;
+  };
+  const navigate = useNavigate();
+
+  const goNext = () => {
+    navigate("/login"); // 시작하기 이후 로그인 페이지로 이동한다고 가정
   };
 
   return (
@@ -28,7 +27,11 @@ function Login() {
         스마트한 러닝을 시작해보세요.
       </p>
 
-      <img src="/assets/logo.png" alt="RunPT Main Logo" className="login-logo" />
+      <img
+        src="/assets/logo.png"
+        alt="RunPT Main Logo"
+        className="login-logo"
+      />
 
       <div className="login-buttons">
         <button className="login-btn kakao-btn" onClick={KakaoLogin}>
