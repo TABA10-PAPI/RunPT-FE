@@ -7,8 +7,6 @@
   --gray: 37, 37, 37;          /* #252525 */
 }
 
-<<<<<<< HEAD
-=======
 .font-regular {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -23,7 +21,6 @@
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
->>>>>>> e3539d717f1f7b2ccdcb6ff32a1cfc51ae18b161
 
 .container {
     display: flex;
