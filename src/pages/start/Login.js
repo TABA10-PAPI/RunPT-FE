@@ -2,7 +2,7 @@ import React from "react";
 import "../../App.css";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import { KAKAO_AUTH_URL, NAVER_AUTH_URL } from "./Oauth/Oauth";
+import { KAKAO_AUTH_URL, NAVER_AUTH_URL } from "../Oauth/Oauth";
 
 function Login() {
   const KakaoLogin = () => {
