@@ -5,10 +5,10 @@ import "@fontsource/inter/400.css"; // Regular
 import "@fontsource/inter/600.css"; // Semi-bold
 import "@fontsource/inter/700.css"; // Bold
 
-import Welcome from './pages/Welcome.js';
-import Login from './pages/Login.js';
-import Join from './pages/Join.js';
-import Home from './pages/Home.js';
+import Welcome from './pages/start/Welcome.js';
+import Login from './pages/start/Login.js';
+import Join from './pages/start/Join.js';
+import Home from './pages/home/Home.js';
 
 function App() {
   return (
