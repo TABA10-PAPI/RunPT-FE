@@ -1,42 +1,45 @@
 import React from "react";
-import '../App.css';
-import './Login.css'
+import "../App.css";
+import "./Login.css";
 
-function Login(){
-    return (
-    <div className="container"> 
-      {/* container는 너가 App.css에서 만든 전체 검정 배경 등 */}
+function Login() {
+  const KAKAO_API_KEY = process.env.REACT_APP_KAKAO_API_KEY;
+  const KAKAO_REDIRECT_URI = process.env.REACT_APP_KAKAO_REDIRECT_URI;
 
-        <h1 className="welcome-title font-bold">환영합니다.</h1>
+  const KAKAO_AUTH_URL =
+    "https://kauth.kakao.com/oauth/authorize?client_id=${KAKAO_API_KEY}&redirect_uri=${KAKAO_REDIRECT_URI}&response_type=code";
+  const NAVER_AUTH_URL =
+    "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${NAVER_CLIENT_ID}&state=${STATE}&redirect_uri=${REDIRECT_URI}";
 
-        <p className="welcome-subtitle font-semibold">
-          <span className="runpt-text font-semibold">RunPT</span>로<br />
-          스마트한 러닝을 시작해보세요.
-        </p>
+  const KakaoLogin = () => {
+    window.location.href = KAKAO_AUTH_URL;
+  };
+  const NaverLogin = () => {
+    window.location.href = NAVER_AUTH_URL;
+  };
 
-        {/* 중앙 큰 이미지(보라→파랑 gradient 아이콘) */}
-        <img 
-          src="/assets/runpt-main.png" 
-          alt="RunPT Main Logo" 
-          className="main-logo"
-        />
+  return (
+    <div className="container login-page">
+      {/* container 전체 검정 배경 */}
+      <h1 className="login-title font-bold">환영합니다.</h1>
 
-        {/* 로그인 버튼들 */}
-        <div className="login-buttons">
+      <p className="login-subtitle font-semibold">
+        <span className="runpt-text font-semibold">RunPT</span>로<br />
+        스마트한 러닝을 시작해보세요.
+      </p>
 
-          {/* 네이버 */}
-          <button className="login-btn naver-btn">
-            <img src="/naver_phone.png" alt="Naver" className="icon" />
-          </button>
+      <img src="/assets/logo.png" alt="RunPT Main Logo" className="login-logo" />
 
-          {/* 카카오 */}
-          <button className="login-btn kakao-btn">
-            <img src="/kakao_phone.png" alt="Kakao" className="icon" />
-          </button>
+      <div className="login-buttons">
+        <button className="login-btn kakao-btn" onClick={KakaoLogin}>
+          <img src="/assets/kakao_phone.png" alt="Kakao" className="icon" />
+        </button>
 
-        </div>
-
+        <button className="login-btn naver-btn" onClick={NaverLogin}>
+          <img src="/assets/naver_phone.png" alt="Naver" className="icon" />
+        </button>
       </div>
+    </div>
   );
 }
 export default Login;
