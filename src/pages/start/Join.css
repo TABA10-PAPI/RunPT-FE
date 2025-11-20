@@ -1,0 +1,60 @@
+.join-title {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+  text-align: left;
+  color:white;
+}
+
+.join-subtitle {
+  font-size: 18px;
+  line-height: 29px;
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 20px 0 40px 0;
+  
+}
+
+.join-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.join-input-group label {
+  font-size: 16px;
+  font-weight: 600;
+  color:white
+}
+
+.join-input-group input {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #252525;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.join-input-group input::placeholder {
+  color: #777;
+}
+
+.join-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #090909;
+  background: rgba(var(--green));
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(var(--green), 0.25);
+}
